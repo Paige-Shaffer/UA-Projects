@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            background: rgb(155, 189, 228);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(151, 204, 247);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            padding: 23px;
+            border-radius: 8px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ebe5e5;
+        }
+
+        th {
+            background-color: #8995db; /* Matching button color */
+            color: white;
+        }
+
+        tr:hover {
+            background-color: rgba(133, 136, 136, 0.1);
+        }
+
+        button {
+            background: #8995db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #7d8bdb;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b8daff;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Details</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Title</strong></td>
+                    <td id="title" class="event-title"></td>
+                </tr>
+                <tr>
+                    <td><strong>Location</strong></td>
+                    <td id="location"></td>
+                </tr>
+                <tr>
+                    <td><strong>Coordinator</strong></td>
+                    <td id="coordinator"></td>
+                </tr>
+                <tr>
+                    <td><strong>Date</strong></td>
+                    <td id="date"></td>
+                </tr>
+                <tr>
+                    <td><strong>Time</strong></td>
+                    <td id="time"></td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone</strong></td>
+                    <td id="phone"></td>
+                </tr>
+                <tr>
+                    <td><strong>Description</strong></td>
+                    <td id="description"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        // Load data from local storage
+        window.addEventListener("load", function() {
+            document.getElementById("title").innerText = localStorage.getItem("eventTitle");
+            document.getElementById("location").innerText = localStorage.getItem("eventLocation");
+            document.getElementById("coordinator").innerText = localStorage.getItem("eventCoordinator");
+            document.getElementById("date").innerText = localStorage.getItem("eventDate");
+            document.getElementById("time").innerText = localStorage.getItem("eventTime");
+            document.getElementById("email").innerText = localStorage.getItem("eventEmail");
+            document.getElementById("phone").innerText = localStorage.getItem("eventPhone");
+            document.getElementById("description").innerText = localStorage.getItem("eventDescription");
+        });
+    </script>
+</body>
+</html>

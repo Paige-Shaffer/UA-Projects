@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Customer</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="/styles/newstyles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Add New Customer</h1>
+        <form action="/customers/new" method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" required><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" required><br><br>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" name="occupation" id="occupation" required><br><br>
+
+            <button type="submit">Add Customer</button>
+            <a href="/customers">Back to Customer List</a>
+        </form> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+    <!--- Referencs and Honorable Mentions
+Honorable mention to my mom, who took all of the photos I'm using. Her photography work is amazing. 
+Another Honorable mention to my stepdad for talking to me and letting me borrow his books for the facts.
+Referenced: https://www.w3schools.com/, https://replit.com/@theothebear18/Senior-Project-2021 (This is a semester of Web Development from when I was in school. I have a lot of tutorials I reference for extra help.)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo's Travel Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    .dropdown {
+        height: auto;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+    </header>
+
+    <div class="container">
+        <!-- Column 1: Nav -->
+        <div class="dropdown">
+            <div class = "dropbtn"> Menu &#9662;  </div>
+            <div class="dropdown-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Montana.html">Montana</a></li>
+                <li><a href="Nevada.html">Nevada</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Column 2: Text -->
+        <main class="text-content">
+            <section>
+                <h2>About The Author</h2>
+                <p> Hello and welcome to the travel blog! These are not a collection of my experiences, but a collection of my families. Both of my parents backpack as a hobby making for a perfect collection of photos and experiences to use. Stop in and take a look around! </p>
+            </section>
+            <section class="gallery">
+                <h2>Photo Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="images/Lake-Tahoe-Trail-2.jpg" alt="Lake-Tahoe-Trail-2">
+                    <img src="images/Running-Eagle-Falls-3.jpg" alt="Running-Eagle-Falls-3">
+                    <img src="images/Siyeh-Pass-Trail-2.jpg" alt="Siyeh Pass Trail 2">
+                    <img src="images/Siyeh-Pass-Trail-3.jpg" alt="Siyen Pass Trail 3">
+                    <img src="images/Echo-Lakes-2.jpg" alt="Echo-Lakes-2">
+                    <img src="images/Lake-Tahoe-2.jpg" alt="Lake-Tahoe-2">
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Column 3: List -->
+        <aside class="list-content">
+            <h2 style="color:white;">My Adventures</h2>
+            <ul>
+                <li><a href="Montana.html">Running Eagle Falls </a></li>
+                <li><a href="Montana.html"> Siyeh Pass Trail </a></li>
+                <li><a href="Nevada.html">Echo Lakes</a></li>
+                <li><a href="Nevada.html">Lake Tahoe</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script>
+        document.querySelector('.dropbtn').addEventListener('click', function() {
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

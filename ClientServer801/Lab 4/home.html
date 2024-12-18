@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zips Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="container"> 
+<h1>Zips Coffee</h1>
+<p> Please enter your order below: </p>
+
+<div>
+    <!-- Menu items: Block W/Hover Images -->
+    <div class="menu-item">
+        <img src="images/espresso.jpg" alt="Espresso" class="menu-image">
+        <div class="caption">Espresso - $2.50</div>
+        <img src="images/espressoHover.jpg" alt="Espresso" class="hover-image" onclick="addToOrder('Espresso', 2.50)">
+        <div class="hover-caption"> Served in a small shot with your choice of milk, cream and/or sugar addons. </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="images/latte.jpg" alt="Latte" class="menu-image">
+        <div class="caption">Latte - $3.50</div>
+        <img src="images/latteHover.jpg" alt="Latte" class="hover-image" onclick="addToOrder('Latte', 3.50)">
+        <div class="hover-caption"> A shot of espresso and steamed milk, topped with a light froth. </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="images/cappuccino.jpg" alt="Cappuccino" class="menu-image">
+        <div class="caption">Cappuccino - $3.00</div>
+        <img src="images/cappuccinoHover.jpg" alt="Cappuccino" class="hover-image" onclick="addToOrder('Cappuccino', 3.00)">
+        <div class="hover-caption"> Equal parts espresso, steamed milk, and milk foam. </div>
+    </div>
+</div>
+
+<!-- Order table: Price, Quantity, Items Bought -->
+<h2>Order List</h2>
+<table id="orderTable">
+    <tr>
+        <th>Item</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+    </tr>
+    <tbody id="orderBody"></tbody>
+</table>
+<!-- Cost: Running calculation with Javascript -->
+<p><strong>Total Cost:</strong> <span id="orderTotal">$0.00</span></p>
+<button type="button" onclick="placeOrder()">Place Order</button>
+<button type="button" onclick="clearOrder()">Clear Order</button>
+<script src="script.js"></script>
+
+</div>
+</body>
+</html>

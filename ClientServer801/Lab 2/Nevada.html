@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo's Travel Blog: Nevada </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="NVStyles.css">
+</head>
+<body>
+    <header>
+        <h1> Stateline, Nevada & El Dorado County, California </h1>
+    </header>
+    <div class="container">
+        <div class="dropdown">
+            <div class = "dropbtn"> Menu &#9662; </div>
+            <div class="dropdown-content">
+            <ul>
+                <li><a href="Blog.html">Home</a></li>
+                <li><a href="Montana.html">Montana</a></li>
+                <li><a href="Nevada.html">Nevada</a></li>
+            </ul>
+            </div>
+        </div>
+        <main class="text-content">
+            <section>
+            <h2> Tahoe Rim Trail & The Echo Lakes </h2>
+            <div class="imgwrap">
+            <img src="Travel Images/Stateline, Nevada/Echo-Lakes-1.jpg" alt="Echo Lakes 1">
+            </div>
+           <p> The Tahoe Rim Trail is breathtaking and provides an unforgettable experience and view of Lake Tahoe and the Echo Lake. </p>
+           </section>
+           <section>
+           <h2> Lake Tahoe Trail </h2>
+           <div class="imgwrap">
+           <img src="Travel Images/Stateline, Nevada/Lake-Tahoe-1.jpg" alt="Lake Tahoe 1">
+           </div>
+           <p> Lake Tahoe is a natural beauty with a wonderful lake view, large and rugged mountains and forests. It both adventureus and tranquil. </p>
+            </section>
+        </main>
+    <aside class="list-content">
+    <!-- Tahoe Rim Trail -->
+     <section>
+    <ol> 
+        <li> The Tahoe Rim Trail is about 165 miles long. </li>
+        <li> The trail has multiple enterances that appeal to many different levels of hikers going from 6,300 to 10,300 feet in elevation. </li>
+        <li> Hikes provive panaramic views of Lake Tahoe. </li>
+    </ol>
+    </section>  
+    <section>
+    <!-- Lake Tahoe Trail -->
+    <ol>
+        <li> Only open from late spsring to early fall because of the snow, which can still be seen in the summer months </li>
+        <li> Is culturally significant to the Washoe tribe. </li>
+        <li> Common for backpackers thanks to the many campsites for convient overnight trips. </li>
+    </ol>
+    </section>
+    </aside>
+</div>
+<script>
+    document.querySelector('.dropbtn').addEventListener('click', function() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

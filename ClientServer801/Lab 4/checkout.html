@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout: Zips Coffee</title>
+    <link rel="stylesheet" href="checkoutstyles.css">
+
+</head>
+<body>
+
+<div class="container"> 
+<h1>Checkout</h1>
+<h2>Your Order</h2>
+<!-- Order table: Created from home.html data -->
+<table id="orderTable">
+    <tr>
+        <th>Item</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+    </tr>
+    <tbody id="orderBody"></tbody>
+</table>
+
+<p><strong>Total Cost:</strong> <span id="orderTotal">$0.00</span></p>
+<!-- Receipt menu -->
+<div class="receipt">
+    <p><strong>Receipt</strong></p>
+    <p>Date: <span id="dateTime"></span></p>
+    <p class="thank-you">Thank you for shopping with us!</p>
+    <p class="description">We hope you enjoy your delicious coffee. Come back soon for more!</p>
+</div>
+<!-- Returns user to previous page -->
+<button class="back-button" onclick="goBackToOrder()">Back to Order</button>
+<script src="checkoutscript.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Customer Details</title>
+</head>
+<body>
+    <div class="card">
+    <h1>Customer Details</h1>
+    <h2> <%= customer.first_name %> <%= customer.last_name %> </h2>
+    <p> Occupation: <%= customer.occupation %> </p>
+    <p>ID: <%= customer.id %></p>
+    <a href="/customers">Back to Customer List</a>
+    </div>
+</body>
+</html>

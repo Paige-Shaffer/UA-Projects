@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    margin: 0 15px;
+    position: relative;
+    white-space: nowrap; 
+    padding: 10px; 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+nav a:hover {
+    background: #555;
+    border-radius: 4px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #444;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
